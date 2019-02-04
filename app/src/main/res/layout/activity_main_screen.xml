@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <Button
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="openStats"
+        android:text="Stats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="openHistory"
+        android:text="Historique"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/table"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="buttonClick"
+        android:text="@string/tables"
+        app:layout_constraintBottom_toTopOf="@+id/wine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wine"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="openWine"
+        android:text="Vin"
+        app:layout_constraintBottom_toTopOf="@+id/dish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table" />
+
+    <Button
+        android:id="@+id/dish"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="openDish"
+        android:text="Plats"
+        app:layout_constraintBottom_toTopOf="@+id/dessert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wine" />
+
+    <Button
+        android:id="@+id/dessert"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="openDessert"
+        android:text="Desserts"
+        app:layout_constraintBottom_toTopOf="@+id/stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dish" />
+
+</android.support.constraint.ConstraintLayout>
