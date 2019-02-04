@@ -6,16 +6,11 @@ import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 
-public class Table extends AppCompatActivity{
+public class TableClient extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_table);
-    }
-
-    public void buttonClick(View view) {
-        Intent mintent = new Intent(Table.this, com.example.nlarbi.smartorder.TableClient.class);
-        startActivity(mintent);
+        setContentView(R.layout.activity_table_client);
     }
 }
