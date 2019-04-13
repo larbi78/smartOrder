@@ -18,4 +18,9 @@ public class MainScreen extends AppCompatActivity{
         Intent mintent = new Intent(MainScreen.this, com.example.nlarbi.smartorder.Table.class);
         startActivity(mintent);
     }
+
+    public void buttonClickMenu(View view) {
+        Intent mintent = new Intent(MainScreen.this, com.example.nlarbi.smartorder.Table.class);
+        startActivity(mintent);
+    }
 }

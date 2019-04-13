@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Table" />
+        <activity android:name=".Menu" />
         <activity android:name=".TableClient" />
     </application>
 
