@@ -6,12 +6,14 @@ public class Produit {
     private String name;
     private String status;
     private float price;
+    private String type;
 
-    public Produit(int id, String name, String status, float price) {
+    public Produit(int id, String name, String status, float price, String type) {
         this.id = id;
         this.name = name;
         this.status = status;
         this.price = price;
+        this.type = type;
     }
 
     public int getId() {
@@ -45,4 +47,10 @@ public class Produit {
     public void setPrice(float price) {
         this.price = price;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) { this.type = type; }
 }
