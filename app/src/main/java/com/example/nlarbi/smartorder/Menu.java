@@ -61,7 +61,7 @@ public class Menu extends AppCompatActivity {
 
                     produit.put("name", name);
                     produit.put("status", status);
-                    produit.put("price", price);
+                    produit.put("price", price.concat("€"));
                     produit.put("type", type);
 
                     produitList.add(produit);
