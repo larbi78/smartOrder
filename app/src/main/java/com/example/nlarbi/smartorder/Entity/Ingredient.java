@@ -1,13 +1,15 @@
-package Entity;
+package com.example.nlarbi.smartorder.Entity;
 
-public class Employe {
+public class Ingredient {
 
     private int id;
     private String name;
+    private int qte;
 
-    public Employe(int id, String name) {
+    public Ingredient(int id, String name, int qte) {
         this.id = id;
         this.name = name;
+        this.qte = qte;
     }
 
     public int getId() {
@@ -24,5 +26,13 @@ public class Employe {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getQte() {
+        return qte;
+    }
+
+    public void setQte(int qte) {
+        this.qte = qte;
     }
 }

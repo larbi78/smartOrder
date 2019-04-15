@@ -1,19 +1,19 @@
-package Entity;
+package com.example.nlarbi.smartorder.Entity;
 
 import java.util.Date;
 
-public class TableEmploye {
+public class Commande {
 
     private int id;
     private int tableId;
-    private int employeId;
     private Date date;
+    private String status;
 
-    public TableEmploye(int id, int tableId, int employeId, Date date) {
+    public Commande(int id, int tableId, Date date, String status) {
         this.id = id;
         this.tableId = tableId;
-        this.employeId = employeId;
         this.date = date;
+        this.status = status;
     }
 
     public int getId() {
@@ -32,19 +32,19 @@ public class TableEmploye {
         this.tableId = tableId;
     }
 
-    public int getEmployeId() {
-        return employeId;
-    }
-
-    public void setEmployeId(int employeId) {
-        this.employeId = employeId;
-    }
-
     public Date getDate() {
         return date;
     }
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

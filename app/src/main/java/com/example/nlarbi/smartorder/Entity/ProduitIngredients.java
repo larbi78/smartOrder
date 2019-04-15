@@ -1,4 +1,4 @@
-package Entity;
+package com.example.nlarbi.smartorder.Entity;
 
 public class ProduitIngredients {
 

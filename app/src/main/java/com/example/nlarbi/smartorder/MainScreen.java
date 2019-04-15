@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 
-public class MainScreen extends AppCompatActivity{
+public class MainScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,12 @@ public class MainScreen extends AppCompatActivity{
     }
 
     public void buttonClickMenu(View view) {
-        Intent mintent = new Intent(MainScreen.this, com.example.nlarbi.smartorder.Table.class);
+        Intent mintent = new Intent(MainScreen.this, com.example.nlarbi.smartorder.Menu.class);
+        startActivity(mintent);
+    }
+
+    public void buttonClickStats(View view) {
+        Intent mintent = new Intent(MainScreen.this, com.example.nlarbi.smartorder.Stats.class);
         startActivity(mintent);
     }
 }

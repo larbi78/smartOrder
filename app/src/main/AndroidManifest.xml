@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".Table" />
         <activity android:name=".Menu" />
-        <activity android:name=".TableClient" />
+        <activity android:name=".TableClientScreen" />
+        <activity android:name=".Stats" />
+        <activity android:name=".Conso" />
+        <activity android:name=".Stock" />
+        <activity android:name=".Turnover" />
     </application>
 
 </manifest>

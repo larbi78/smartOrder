@@ -14,8 +14,8 @@ public class Table extends AppCompatActivity{
         setContentView(R.layout.activity_table);
     }
 
-    public void buttonClick(View view) {
-        Intent mintent = new Intent(Table.this, com.example.nlarbi.smartorder.TableClient.class);
+    public void openTable(View view) {
+        Intent mintent = new Intent(Table.this, com.example.nlarbi.smartorder.TableClientScreen.class);
         startActivity(mintent);
     }
 }
