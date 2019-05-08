@@ -1,23 +1,15 @@
 package com.example.nlarbi.smartorder;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Base64;
-import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.nlarbi.smartorder.Entity.Produit;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.*;
-
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -66,13 +58,12 @@ public class Menu extends AppCompatActivity {
 
                     produitList.add(produit);
                 }
-                Log.e("STATUS", produitList.toString());
 
 
                 ListAdapter adapter = new SimpleAdapter(
                         Menu.this, produitList,
                         R.layout.activity_menu_item, new String[]{"status", "name",
-                        "type", "price"}, new int[]{R.id.status,
+                        "type", "price"}, new int[]{R.id.statut,
                         R.id.name, R.id.type, R.id.price});
 
                 lv.setAdapter(adapter);

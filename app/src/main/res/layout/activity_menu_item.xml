@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/status"
+        android:id="@+id/statut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -31,7 +31,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/type"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/status"
+        app:layout_constraintStart_toEndOf="@+id/statut"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 

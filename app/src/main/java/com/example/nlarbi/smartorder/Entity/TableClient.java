@@ -5,9 +5,9 @@ public class TableClient {
     private int id;
     private int numero;
     private int seats;
-    private String status;
+    private boolean status;
 
-    public TableClient(int id, int numero, int seats, String status) {
+    public TableClient(int id, int numero, int seats, boolean status) {
         super();
         this.id = id;
         this.numero = numero;
@@ -39,11 +39,11 @@ public class TableClient {
         this.seats = seats;
     }
 
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 }
